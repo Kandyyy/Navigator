@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b2caee576c474bacbe004e5fd8564121 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b2caee576c474bacbe004e5fd8564121" ></div>
+        
+</body>
+<script>    
+    
+            var map_b2caee576c474bacbe004e5fd8564121 = L.map(
+                "map_b2caee576c474bacbe004e5fd8564121",
+                {
+                    center: [18.4998182, 73.8568099],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 18,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae3917bf38ae41b7a42f89b0ab601e13 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b2caee576c474bacbe004e5fd8564121);
+        
+    
+
+        function geo_json_e6dcba8af8c34c4d80a8e779968a2cc2_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_e6dcba8af8c34c4d80a8e779968a2cc2 = L.geoJson(null, {
+                onEachFeature: geo_json_e6dcba8af8c34c4d80a8e779968a2cc2_onEachFeature,
+            
+        });
+
+        function geo_json_e6dcba8af8c34c4d80a8e779968a2cc2_add (data) {
+            geo_json_e6dcba8af8c34c4d80a8e779968a2cc2
+                .addData(data)
+                .addTo(map_b2caee576c474bacbe004e5fd8564121);
+        }
+            geo_json_e6dcba8af8c34c4d80a8e779968a2cc2_add({"bbox": [73.807573, 18.500655, 73.857012, 18.513092], "features": [{"bbox": [73.807573, 18.500655, 73.857012, 18.513092], "geometry": {"coordinates": [[73.857012, 18.500655], [73.856099, 18.500853], [73.855879, 18.500961], [73.855722, 18.50109], [73.855424, 18.501153], [73.854652, 18.501309], [73.85434, 18.501279], [73.854141, 18.50127], [73.854045, 18.501306], [73.85401, 18.501286], [73.853928, 18.501284], [73.853892, 18.501303], [73.853865, 18.501334], [73.853855, 18.501357], [73.853853, 18.501407], [73.853861, 18.501431], [73.853804, 18.502221], [73.853789, 18.502324], [73.853781, 18.502522], [73.853823, 18.502601], [73.853689, 18.503768], [73.853627, 18.503882], [73.853616, 18.504011], [73.853596, 18.504252], [73.853588, 18.504333], [73.853623, 18.50446], [73.853589, 18.504944], [73.853588, 18.505157], [73.853592, 18.505215], [73.853598, 18.5053], [73.853575, 18.505311], [73.85354, 18.505377], [73.853546, 18.505402], [73.853495, 18.505454], [73.853338, 18.505598], [73.853323, 18.505653], [73.853233, 18.505719], [73.852419, 18.506306], [73.852162, 18.506511], [73.851726, 18.506858], [73.851169, 18.507322], [73.850424, 18.507824], [73.850049, 18.508065], [73.8497, 18.508287], [73.849092, 18.508672], [73.848098, 18.509233], [73.84718, 18.509751], [73.847142, 18.509777], [73.8467, 18.510095], [73.846617, 18.510169], [73.846502, 18.51025], [73.846372, 18.510331], [73.845999, 18.51062], [73.845056, 18.511464], [73.844919, 18.511544], [73.844252, 18.511831], [73.844092, 18.511926], [73.843991, 18.51204], [73.843928, 18.512071], [73.84387, 18.512167], [73.843855, 18.512236], [73.843818, 18.512132], [73.843575, 18.511784], [73.843491, 18.511692], [73.84341, 18.5116], [73.843291, 18.511434], [73.843265, 18.511348], [73.843257, 18.511247], [73.843156, 18.511242], [73.842266, 18.511166], [73.842122, 18.511172], [73.84205, 18.511203], [73.842006, 18.511244], [73.84196, 18.5113], [73.840808, 18.512697], [73.840595, 18.513092], [73.839788, 18.512787], [73.839311, 18.512581], [73.8382, 18.512039], [73.837305, 18.511595], [73.836934, 18.511405], [73.836399, 18.511141], [73.836136, 18.511012], [73.83584, 18.510867], [73.835411, 18.510667], [73.835209, 18.510573], [73.834581, 18.510301], [73.834063, 18.510041], [73.833586, 18.509795], [73.832674, 18.509325], [73.832324, 18.509126], [73.832073, 18.508987], [73.831979, 18.508934], [73.831445, 18.508661], [73.831366, 18.50862], [73.830872, 18.508369], [73.830355, 18.508109], [73.8295, 18.507679], [73.829442, 18.50765], [73.828976, 18.507419], [73.828435, 18.50715], [73.828219, 18.507047], [73.828135, 18.507008], [73.827942, 18.506932], [73.827882, 18.506904], [73.827702, 18.506834], [73.827678, 18.506825], [73.827631, 18.506743], [73.82757, 18.506698], [73.826471, 18.50618], [73.826065, 18.506023], [73.825973, 18.50599], [73.825747, 18.505909], [73.825484, 18.505811], [73.825131, 18.505686], [73.824933, 18.505608], [73.824837, 18.505581], [73.824649, 18.505529], [73.823434, 18.505195], [73.822913, 18.505019], [73.822497, 18.504835], [73.822387, 18.504786], [73.82185, 18.504546], [73.821498, 18.504363], [73.821197, 18.504186], [73.821111, 18.504134], [73.820537, 18.503779], [73.819846, 18.50327], [73.819821, 18.503256], [73.819657, 18.503168], [73.818934, 18.502884], [73.818586, 18.502771], [73.818362, 18.502697], [73.81757, 18.502461], [73.817174, 18.502354], [73.816971, 18.502299], [73.816221, 18.502134], [73.815831, 18.502069], [73.815608, 18.502032], [73.815534, 18.502012], [73.815431, 18.501952], [73.815329, 18.50204], [73.815212, 18.502061], [73.815096, 18.502076], [73.815045, 18.502082], [73.814484, 18.502069], [73.814411, 18.502106], [73.813838, 18.502102], [73.813615, 18.502114], [73.81361, 18.502071], [73.813567, 18.502041], [73.813447, 18.502042], [73.813359, 18.502043], [73.813313, 18.502067], [73.813296, 18.502106], [73.813296, 18.502145], [73.81288, 18.502177], [73.812658, 18.502184], [73.812519, 18.502181], [73.812402, 18.502172], [73.812249, 18.502161], [73.812127, 18.502089], [73.811808, 18.502033], [73.811074, 18.501952], [73.810855, 18.501888], [73.810771, 18.501877], [73.81075, 18.501858], [73.810721, 18.501849], [73.81069, 18.501853], [73.810664, 18.501869], [73.8105, 18.501941], [73.810355, 18.501974], [73.810328, 18.501971], [73.810301, 18.501978], [73.810279, 18.501994], [73.810266, 18.502018], [73.810264, 18.502044], [73.810272, 18.502069], [73.810288, 18.502088], [73.809651, 18.502609], [73.809234, 18.502923], [73.808785, 18.50326], [73.808711, 18.503316], [73.808394, 18.503554], [73.807749, 18.504039], [73.807609, 18.50408], [73.807573, 18.503908]], "type": "LineString"}, "properties": {"segments": [{"distance": 6518.3, "duration": 533.1, "steps": [{"distance": 262.1, "duration": 11.1, "instruction": "Head west on Balaji Vishwanath Path, NH60, NH65", "name": "Balaji Vishwanath Path, NH60, NH65", "type": 11, "way_points": [0, 5]}, {"distance": 54.1, "duration": 2.3, "instruction": "Keep left onto Balaji Vishwanath Path, NH60, NH65", "name": "Balaji Vishwanath Path, NH60, NH65", "type": 12, "way_points": [5, 7]}, {"distance": 10.9, "duration": 0.5, "instruction": "Keep right onto Balaji Vishwanath Path, NH60, NH65", "name": "Balaji Vishwanath Path, NH60, NH65", "type": 13, "way_points": [7, 8]}, {"distance": 295.1, "duration": 14.1, "exit_number": 2, "instruction": "Enter the roundabout and take the 2nd exit onto Balaji Vishwanath Path, NH60, NH65", "name": "Balaji Vishwanath Path, NH60, NH65", "type": 7, "way_points": [8, 20]}, {"distance": 172.8, "duration": 7.3, "instruction": "Keep left onto Chimaji Appa Peshwe Path, NH60, NH65", "name": "Chimaji Appa Peshwe Path, NH60, NH65", "type": 12, "way_points": [20, 29]}, {"distance": 51.4, "duration": 9.5, "exit_number": 1, "instruction": "Enter the roundabout and take the 1st exit onto Tilak Road", "name": "Tilak Road", "type": 7, "way_points": [29, 35]}, {"distance": 1246.3, "duration": 95.9, "instruction": "Turn slight left onto Lokmanya Tilak Road", "name": "Lokmanya Tilak Road", "type": 4, "way_points": [35, 60]}, {"distance": 129.1, "duration": 7.7, "instruction": "Turn sharp left onto Lalbahadur Shashtri Marg", "name": "Lalbahadur Shashtri Marg", "type": 2, "way_points": [60, 67]}, {"distance": 389.4, "duration": 57.6, "instruction": "Turn right onto Shivram Mhatre Path", "name": "Shivram Mhatre Path", "type": 1, "way_points": [67, 75]}, {"distance": 1530.9, "duration": 119.1, "instruction": "Turn left onto Karve Road, SH60", "name": "Karve Road, SH60", "type": 0, "way_points": [75, 106]}, {"distance": 1414.0, "duration": 103.9, "instruction": "Keep left onto Karve Road", "name": "Karve Road", "type": 12, "way_points": [106, 140]}, {"distance": 14.5, "duration": 1.5, "instruction": "Turn right onto Balbhim Mokate Path", "name": "Balbhim Mokate Path", "type": 1, "way_points": [140, 141]}, {"distance": 98.3, "duration": 10.1, "instruction": "Turn slight left onto Balbhim Mokate Path", "name": "Balbhim Mokate Path", "type": 4, "way_points": [141, 146]}, {"distance": 84.0, "duration": 12.1, "instruction": "Turn slight left onto Balbhim Mokate Path", "name": "Balbhim Mokate Path", "type": 4, "way_points": [146, 148]}, {"distance": 157.6, "duration": 22.9, "exit_number": 3, "instruction": "Enter the roundabout and take the 3rd exit onto Balbhim Mokate Path", "name": "Balbhim Mokate Path", "type": 7, "way_points": [148, 160]}, {"distance": 160.3, "duration": 14.4, "instruction": "Turn slight left onto Balbhim Mokate Path", "name": "Balbhim Mokate Path", "type": 4, "way_points": [160, 165]}, {"distance": 47.5, "duration": 9.7, "exit_number": 2, "instruction": "Enter the roundabout and take the 2nd exit onto Balbhim Mokate Path", "name": "Balbhim Mokate Path", "type": 7, "way_points": [165, 171]}, {"distance": 380.4, "duration": 31.0, "exit_number": 2, "instruction": "Enter the roundabout and take the 2nd exit onto Dhondiba Bhiva Sutar Path", "name": "Dhondiba Bhiva Sutar Path", "type": 7, "way_points": [171, 185]}, {"distance": 19.5, "duration": 2.3, "instruction": "Turn left", "name": "-", "type": 0, "way_points": [185, 186]}, {"distance": 0.0, "duration": 0.0, "instruction": "Arrive at your destination, on the left", "name": "-", "type": 10, "way_points": [186, 186]}]}], "summary": {"distance": 6518.3, "duration": 533.1}, "way_points": [0, 186]}, "type": "Feature"}], "metadata": {"attribution": "openrouteservice.org | OpenStreetMap contributors", "engine": {"build_date": "2022-02-18T19:37:41Z", "graph_date": "2022-02-21T14:34:17Z", "version": "6.7.0"}, "query": {"coordinates": [[73.8568099, 18.4998182], [73.807673, 18.5038889]], "format": "geojson", "profile": "driving-car"}, "service": "routing", "timestamp": 1646478329666}, "type": "FeatureCollection"});
+
+        
+    
+            var layer_control_4419a2cc936640bf80bac39cfdb17710 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ae3917bf38ae41b7a42f89b0ab601e13,
+                },
+                overlays :  {
+                    "route" : geo_json_e6dcba8af8c34c4d80a8e779968a2cc2,
+                },
+            };
+            L.control.layers(
+                layer_control_4419a2cc936640bf80bac39cfdb17710.base_layers,
+                layer_control_4419a2cc936640bf80bac39cfdb17710.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_b2caee576c474bacbe004e5fd8564121);
+        
+</script>
